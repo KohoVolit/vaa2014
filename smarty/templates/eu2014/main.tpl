@@ -8,6 +8,7 @@
     <meta name="description" content="{$text['description']}">
     <meta name="keywords" content="{$text['keywords']}">
     <meta name="author" content="{$text['author']}">
+    <link type="image/x-icon" href="../../image/favicon.ico" rel="shortcut icon">
     
     <meta property="og:image" content="{$text['og:image']}"/>
 	<meta property="og:title" content="{$text['calc']}"/>
