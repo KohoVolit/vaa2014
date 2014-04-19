@@ -41,7 +41,7 @@
     
     {block name=footer}
      <!-- Footer -->
-     {include "page-footer.tpl"}
+     {include "match-footer.tpl"}
      <!-- /Footer -->
    {/block}
    
