@@ -39,6 +39,50 @@ $text = array(
   'page_important_skip' => 'Přeskočit',
   'page_important_results' => 'Výsledky', 
 
+   //MATCH
+   'match_save' => 'Uložit svoje hlasování',
+ 
+   'result_winner_share' => 'Sdílej výsledky na Facebooku',  
+   
+   //fb
+   'result_fb_appid' => "200785490055088",
+  'result_fb_picture_link' => 'http://volebnikalkulacka.cz/evropsky-parlament-2014/image/logo/',
+  'result_fb_name' => 'Ve Volební kalkulačce mám nejvyšší shodu:',
+  'result_fb_description_1' => 'Dle Volební kalkulačky pro eurovolby se se mnou nejvíce shodují: ',
+  'result_fb_description_match' => 'shoda',
+  'result_fb_description_and' => 'a',
+  'result_fb_description_only' => 'jen',
+  'result_fb_description_2' => 'Nejhorší je ',
+  'result_fb_description_3' => 'S kým se shodnete na VolebniKalkulacka.cz?',
+  'result_fb_redirect_link' => 'http://volebnikalkulacka.cz/',
+  'result_fb_link' => 'http://volebnikalkulacka.cz/',
+  'result_fb_action' => "[{'name':'Koho volit?','link':'http://volebnikalkulacka.cz/'}]",   
+   
+   //tabs
+   'result_results' => 'Výsledky',
+   'result_comparison' => 'Porovnání',
+   'result_eu' => 'Výsledky v EU',
+   
+   //support (DMS)
+   'result_support' => '<strong>Podpořte tvorbu nezávislých
+  Volebních kalkulaček.</strong><br/>
+  Pošlete SMS na&nbsp;číslo&nbsp;<strong><span class="colorstrong">87777</span></strong>
+  s&nbsp;textem <strong><span class="colorstrong">DMS&nbsp;KOHOVOLIT</span></strong>
+  (cena 30Kč, z toho 28Kč pro
+   sdružení KohoVolit.eu) nebo 
+   <strong><span class="colorstrong">DMS&nbsp;ROK&nbsp;KOHOVOLIT</span></strong>
+   (automaticky každý měsíc po 1 rok)',
+   
+   //comparison
+   'result_close' => 'Zavřít',
+   'result_yes' => 'Ano',
+   'result_no' => 'Ne',
+   
+   //save
+   'result_save_description' => 'K výsledkům svého hlasování se můžete kdykoliv vrátit, pokud si zkopírujete a uložíte celou tuto adresu:',
+   
+   
+
    //header
   'page_header_desktop' => "Volební kalkulačka 2013",
   'page_header_mobile' => 'Otázka ',
@@ -57,7 +101,7 @@ $text = array(
   //RESULTS
   'result_title' => 'Moje shoda',
   'result_sharing' => 'Sdílení výsledků',
-  'result_share_results_on_facebook' => 'Sdílej výsledky na Facebooku',
+
   'result_twitter_data_lang' => 'cs',
   'result_twitter_text_1' => 'Volební kalkulačka:',
   'result_twitter_text_2' => 'má nejvyšší shoda',
@@ -65,7 +109,7 @@ $text = array(
   'result_twitter_text_3' => ', naopak',
   'result_twitter_hashtags' => '#volby #volby2013',
   'result_twitter_share' => 'Tweetni',
-  'result_fb_picture_link' => 'http://dev.volebnikalkulacka.cz/image/psp2013/party/',
+  /*'result_fb_picture_link' => 'http://dev.volebnikalkulacka.cz/image/psp2013/party/',
   'result_fb_name' => 'Ve Volební kalkulačce mám nejvyšší shodu:',
   'result_fb_description_1' => 'Dle Volební kalkulačky 2013 se se mnou nejvíce shodují: ',
   'result_fb_description_match' => 'shoda',
@@ -75,7 +119,7 @@ $text = array(
   'result_fb_description_3' => 'S kým se shodnete na VolebniKalkulacka.cz?',
   'result_fb_redirect_link' => 'http://volebnikalkulacka.cz/',
   'result_fb_link' => 'http://volebnikalkulacka.cz/',
-  'result_fb_action' => "[{'name':'Koho volit?','link':'http://volebnikalkulacka.cz/'}]",
+  'result_fb_action' => "[{'name':'Koho volit?','link':'http://volebnikalkulacka.cz/'}]",*/
   'result_table_description' => '<strong>Kliknutím na stranu</strong> získáte podrobné porovnání s danou stranou a další informace:',
   'result_filter' => 'Najít stranu...',
   'dms_title' => 'DMS KOHOVOLIT na 87777',

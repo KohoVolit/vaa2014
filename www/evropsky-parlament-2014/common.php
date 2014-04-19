@@ -19,14 +19,13 @@ function get_user_values() {
   $user = array('vote'=>array(),'weight'=>array());
   if (count($_GET) > 0) {
     foreach ($_GET as $key => $param) {
-      //votes
-      if (substr($key,0,2) == 'q-') 
-        $user['vote'][substr($key,2)] = $param;
+      //votes;
+      if (substr($key,0,1) == 'q') 
+        $user['vote'][substr($key,1)] = $param;
       else if (substr($key,0,2) == 'c-')
         $user['weight'][substr($key,2)] = true;
     }
   } else
-      return false;
-  
+      return $user;
   return $user;
 }

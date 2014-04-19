@@ -18,9 +18,7 @@
     <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,700,800|Roboto+Slab:400,700&subset=latin,latin-ext">
-    <link href="../css/stylish-portfolio.min.css" rel="stylesheet">
     {block name=additionalHead}{/block} 
-    <link href="../css/vaa2014.css" rel="stylesheet">
     {if ($partnercss)}
     <link href="{$partnercss}" rel="stylesheet">
     {/if}
@@ -30,6 +28,7 @@
     <div id="top" class="header">
       {block name=body}{/block}
     </div> <!-- /#top -->
+    {block name=outsideBody}{/block}
     {block name=footer}{/block}
     
     <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
