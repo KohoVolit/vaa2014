@@ -42,7 +42,7 @@
     s = 0;
     for (k in voted) {
       id = voted[k];
-      if (typeof (voter[id]) != 'undefined') {
+      if ((typeof (voter[id]) != 'undefined') && (typeof (qcoefs[id]) != 'undefined')) {
           if (typeof (weights[id]) != 'undefined') w = weights[id];
           else w = 1;
           s += voter[id] * w * qcoefs[id];
@@ -80,7 +80,8 @@
   function calc_match(voter1,voter2,voted,weights) {
     s = 0;
     c = 0;
-    for (id in voted) {
+    for (i in voted) {
+      id = voted[i];
       if (typeof (voter1[id]) != 'undefined') {
         if (typeof (voter2[id]) != 'undefined') {
           if (typeof (weights[id]) != 'undefined') w = weights[id];
