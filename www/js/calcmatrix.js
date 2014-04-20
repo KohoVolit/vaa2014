@@ -84,7 +84,7 @@
       id = voted[i];
       if (typeof (voter1[id]) != 'undefined') {
         if (typeof (voter2[id]) != 'undefined') {
-          if (typeof (weights[id]) != 'undefined') w = weights[id];
+          if (typeof (weights[id]) != 'undefined') w = 2; //default weight is 2 weights[id];
           else w = 1;
           s += voter1[id] * voter2[id] * w;
           c += w;

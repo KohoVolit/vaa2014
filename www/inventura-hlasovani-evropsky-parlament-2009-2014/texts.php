@@ -4,7 +4,7 @@
 */
 $text = array(
   
-  'election_code' => 'eu2014',
+  'election_code' => 'eu2009-2014',
   'lang' => 'cs',
   //meta
   'author' => 'KohoVolit.eu',
@@ -23,13 +23,13 @@ $text = array(
   
 
 
-  'calc' => 'Volební kalkulačka',
+  'calc' => 'Inventura hlasování',
   'info' => 'Info',
   'url' => 'http://volebnikalkulacka.cz',  
-  'title' => 'Volební kalkulačka 2014 | volby do Evropského parlamentu' ,
+  'title' => 'Inventura hlasování EP 2009-2014 | Volební kalkulačka' ,
 
    //PAGE
-  'calc_name' => 'Volební kalkulačka - evropské volby 2014',
+  'calc_name' => 'Inventura hlasování - Evropský parlament 2009-2014',
   'page_question_yes' => 'ANO',
   'page_question_no' => 'NE',
   'page_question_neutral' => 'nevím',
@@ -47,8 +47,8 @@ $text = array(
    //fb
    'result_fb_appid' => "200785490055088",
   'result_fb_picture_link' => 'http://volebnikalkulacka.cz/evropsky-parlament-2014/image/logo/',
-  'result_fb_name' => 'Ve Volební kalkulačce mám nejvyšší shodu:',
-  'result_fb_description_1' => 'Dle Volební kalkulačky pro eurovolby se se mnou nejvíce shodují: ',
+  'result_fb_name' => 'V Inventuře hlasování EP mám nejvyšší shodu:',
+  'result_fb_description_1' => 'Dle Inventury hlasování 2009-2013 mě v Europarlamentu reprezentuje: ',
   'result_fb_description_match' => 'shoda',
   'result_fb_description_and' => 'a',
   'result_fb_description_only' => 'jen',
@@ -78,6 +78,7 @@ $text = array(
    'result_yes' => 'Ano',
    'result_no' => 'Ne',
    'result_question' => 'Otázka',
+   
    
    //save
    'result_save_description' => 'K výsledkům svého hlasování se můžete kdykoliv vrátit, pokud si zkopírujete a uložíte celou tuto adresu:',

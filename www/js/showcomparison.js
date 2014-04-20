@@ -40,7 +40,7 @@ function make_comparison(questions, details) {
   v1_id = ids[0];
   v2_id = ids[1];
   
-  html += '<tr><th>Otázka</th><th class="comp-center">' + answers[v1_id]['short_name'] + '</th><th></th><th class="comp-center">' + answers[v2_id]['short_name'] + '</th></tr>';
+  html += '<tr><th>'+ texts['question'] +'</th><th class="comp-center">' + answers[v1_id]['short_name'] + '</th><th></th><th class="comp-center">' + answers[v2_id]['short_name'] + '</th></tr>';
   html += '</thead><tbody>';
   for (key in questions) {
     q_id = questions[key]['id'];
@@ -48,7 +48,11 @@ function make_comparison(questions, details) {
     vote2 = answers[v2_id]['vote'][q_id];
     detail1 = get_detail(details,v1_id,q_id);
     detail2 = get_detail(details,v2_id,q_id);
-    html += "<tr><td>" + questions[key]['name'] + tooltip(questions[key]['question'],'fa-info-circle');
+    if (typeof(weights[q_id]) != "undefined")
+      important = "<i class='fa fa-star'></i> </span>";
+    else
+      important = '';
+    html += "<tr><td>" + important + questions[key]['name'] + tooltip(questions[key]['question'],'fa-info-circle');
     html += "</td><td class='comp-center'>" + val2word(vote1);
     if (detail1) html += tooltip(detail1, 'fa-info-circle');
     html += "</td><td class='comp-center'>";
@@ -79,7 +83,7 @@ function get_detail(details,vid,qid) {
 
 function val2word(val) {
   if (typeof(val) == "undefined") return '=';
-  if (val == 1) return yesno['yes'];
-  if (val == -1) return yesno['no'];
+  if (val == 1) return texts['yes'];
+  if (val == -1) return texts['no'];
   return "-";
 }
