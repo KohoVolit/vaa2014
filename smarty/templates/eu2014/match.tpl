@@ -17,6 +17,8 @@
         <!-- winners -->
           {include "match-winners.tpl"}
         <!-- /winners -->
+        <!-- sharer -->
+        <!-- /sharer -->
         <!-- fb -->
           {include "match-fb.tpl"}
         <!-- /fb -->
@@ -25,6 +27,8 @@
         <!-- /tabs -->
         
           {include "match-fb.tpl"}
+          
+          {include "match-lower.tpl"}
 
       </div>
       <!-- /results -->

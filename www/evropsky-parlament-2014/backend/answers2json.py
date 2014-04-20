@@ -16,7 +16,7 @@ def vote2vote (vote):
 # read voters
 i = 0
 voters = {}
-with open('voters.tsv','r') as f:
+with open('source/voters.tsv','r') as f:
   csvreader = csv.reader(f,delimiter="\t")
   for row in csvreader:
     if i == 0:
@@ -38,7 +38,7 @@ with open('voters.tsv','r') as f:
 i = 0
 details = {}
 print "mismatching codes:"
-with open('answers.tsv','r') as f:
+with open('source/answers.tsv','r') as f:
   csvreader = csv.reader(f,delimiter="\t")
   for row in csvreader:
     if i == 0:
@@ -87,6 +87,11 @@ for key in voters:
 data = sorted(data, key=lambda x: x['friendly_name'])    
 nodata = sorted(nodata, key=lambda x: x['friendly_name'])
 
+#array to obj
+dataout = {}
+for item in data:
+  dataout[item['id']] = item
+
 # db-like file for R
 votesdb = []
 for item in data:
@@ -95,7 +100,7 @@ for item in data:
   
 #save files 
 with open('answers.json', 'w') as outfile:
-  json.dump(data, outfile)
+  json.dump(dataout, outfile)
 outfile.close()
 with open('noreply.json', 'w') as outfile:
   json.dump(nodata, outfile)
