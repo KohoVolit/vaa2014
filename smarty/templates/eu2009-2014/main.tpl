@@ -23,6 +23,16 @@
     {if ($partnercss)}
     <link href="{$partnercss}" rel="stylesheet">
     {/if}
+    {if ({$background})}
+      <style>
+        @media (min-width: 666px) { .header { background-image: url('{$background}'); }}
+      </style>
+    {/if}
+     {if ({$navbar})}
+      <style>
+        .navbar-custom { background-color: {$navbar}; }
+      </style>
+    {/if}
     {block name=lastHead}{/block}
   </head>
   <body>
@@ -35,5 +45,17 @@
     <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
     {block name=js}{/block}
+    <!-- google analytics -->
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-8592359-7']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+    <!-- /google analytics -->
   </body>
 </html>
