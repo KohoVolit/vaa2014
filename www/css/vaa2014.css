@@ -83,7 +83,7 @@
   .navbar a, .nav a { 
 	  color: #fff; 
 	  text-decoration: none; 
-  } 
+  }
  
     /* media queries */
   
@@ -340,6 +340,7 @@ h3 {
   }
   .hoverBold {
     font-weight: bold;
+    font-size: 1.25em;
   }
   .middle-rect {
     fill: #aaa;

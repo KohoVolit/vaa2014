@@ -23,7 +23,7 @@ $text = array(
   
 
 
-  'calc' => 'Inventura hlasování',
+  'calc' => 'Inventura hlasování 2009-2014',
   'info' => 'Info',
   'url' => 'http://volebnikalkulacka.cz',  
   'title' => 'Inventura hlasování EP 2009-2014 | Volební kalkulačka' ,
@@ -38,6 +38,8 @@ $text = array(
   'page_important_legend' => '<strong>Vyberte otázky, které jsou pro Vás nejdůležitější</strong>.  Zpřesníte tím výsledek. Tento krok není povinný a lze přeskočit.',
   'page_important_skip' => 'Přeskočit',
   'page_important_results' => 'Výsledky', 
+  'ie8' => 'Omlouváme se, ale Volební kalkulačka není dobře použitelná pro Internet Explorer 8 a starší',
+  'opera11' => 'Omlouváme se, ale Volební kalkulačka není dobře použitelná pro prohlížeč Opera 11 a starší',
 
    //MATCH
    'match_save' => 'Uložit svoje hlasování',
